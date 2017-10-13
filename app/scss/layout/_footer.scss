@@ -1,0 +1,14 @@
+footer{
+    background: $azul;
+    .container-footer{
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 25px 0;
+        p{
+            text-align: center;
+            color: #6E7078;
+            font-size: 12px;
+            font-weight: 400;
+        }
+    }
+}

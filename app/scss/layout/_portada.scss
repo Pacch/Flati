@@ -1,0 +1,60 @@
+.portada{
+    background: $celeste;
+    position: relative;
+    z-index: -1;
+    .container{
+        @media screen and (min-width: 1200px){
+            position: relative;
+            height: 68vh;
+            max-width: 1000px;
+            margin: 0 auto;
+            
+        }
+        .robot{
+            z-index:1;
+            position: absolute;
+            bottom: -194px;
+        }
+        .cohete{
+            width: 160px;
+            height: 205px;
+            position: absolute;
+            z-index: -1;
+            top: 193px;
+            right: 111px;
+        }
+        .frases{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            font-size: 50px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            .grande{
+                font-size: 1em;
+                line-height: 1;
+                letter-spacing: 1px;
+            }
+            .mediano{
+                line-height: 6;
+                font-size: 0.5em;
+                letter-spacing: 1px;
+            }
+            .chico{
+                font-size: 0.2em;
+                padding: 10px;
+                border: 1px solid white;
+                line-height: 2;
+                letter-spacing: 1px;
+            }
+            p{
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+    }        
+}
+

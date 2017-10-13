@@ -1,0 +1,36 @@
+.frase{
+    @media screen and (min-width: 1200px){
+    display: flex;
+    justify-content: center;
+    background: $crema;
+    height: 24vh;
+    text-align: center;
+    }
+    .container{
+        color: $text-frase;
+        align-self: center;
+        font-size: 22px;
+        p{
+            line-height: 1.4;
+            font-weight: 100;
+        }
+        p.linea-superior{
+            color: $text-frase;
+            font-weight: 100;
+            span{
+                background: #29A4CA;
+                color: $text-color;
+            }
+        }
+        p.linea-media{
+            color: $text-frase;
+            font-weight: 100;
+            .span-1{
+            color: #29A4CA;                                
+            }
+            .span-2{
+            color:#5B6B72;
+            }
+        }
+    }
+}

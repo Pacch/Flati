@@ -1,0 +1,40 @@
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    @extend html;
+    background: $plomo;
+    font-family: $base-font-family;
+    min-height: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a {
+    text-transform: uppercase;
+    color: $text-color;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color:red;
+        text-decoration: underline;
+        text-decoration: none;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+    &::before,
+    &::after {
+        @extend *;
+    }
+}

@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+//vendor
+@import "vendor/_icomoon";
+
+//base
+@import "base/_config",
+        "base/_fonts",
+        "base/_presets";
+
+//layout
+@import "layout/_default",
+        "layout/_header",
+        "layout/_portada",
+        "layout/_frase",
+        "layout/_section",
+        "layout/_banner-sociales",
+        "layout/_footer";
