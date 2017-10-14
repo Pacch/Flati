@@ -1,6 +1,6 @@
 section{
     background:$plomo;
-    // margin-top: 80px;
+    display: flex;
     .container-section{
         max-width: 1000px;
         margin: 0 auto;
@@ -9,6 +9,7 @@ section{
             display: flex;
             justify-content: space-between;
             padding: 0;
+
             li{
                 text-align: center;
                 width: 237px;

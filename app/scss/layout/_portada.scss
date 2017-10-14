@@ -1,15 +1,27 @@
 .portada{
     background: $celeste;
     position: relative;
-    z-index: -1;
+    a{
+        position: absolute;
+        i{
+            margin-top: 5vh;
+            background: white;
+            color: black;
+            width: inherit;
+            height: inherit;
+            padding: 10px 6px;
+            border-radius: 0 5px 5px 0;
+        }
+    }
     .container{
-        @media screen and (min-width: 1200px){
+        // @media screen and (min-width: 1200px){
             position: relative;
+            z-index: 1;
             height: 68vh;
             max-width: 1000px;
             margin: 0 auto;
             
-        }
+        // }
         .robot{
             z-index:1;
             position: absolute;

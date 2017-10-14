@@ -1,11 +1,13 @@
 .frase{
-    @media screen and (min-width: 1200px){
+    // @media screen and (min-width: 1200px){
     display: flex;
     justify-content: center;
     background: $crema;
     height: 24vh;
     text-align: center;
-    }
+    position: relative;
+    z-index: 1;
+    // }
     .container{
         color: $text-frase;
         align-self: center;

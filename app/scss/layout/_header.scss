@@ -1,43 +1,43 @@
 
 header{
-    @media screen and (min-width: 1200px) {    
+    // @media screen and (min-width: 1200px) {    
         background: $azul;
         height: 8vh;
-    }
+    // }
     .container{
-        @media screen and (min-width: 1200px) {
+        // @media screen and (min-width: 1200px) {
             height: inherit;
             display: flex;
             max-width: 1000px;
             margin: 0 auto;
-        }
+        // }
         .logo{
-            @media screen and (min-width: 1200px) {
+            // @media screen and (min-width: 1200px) {
                 align-self: center;
-                flex: 4;                
-            }
+                flex: 4;               
+            // }
             h2{
-                @media screen and (min-width: 1200px) {
+                // @media screen and (min-width: 1200px) {
                     text-transform: lowercase;
                     font-size: 45px;
                     font-weight: 100;
                     letter-spacing: -3px;
                     color:$text-color;
-                }
+                // }
             }
         }
         nav{
-            @media screen and (min-width: 1200px) {
+            // @media screen and (min-width: 1200px) {
                 align-self: flex-end;
-            }
+            // }
             ul{
-                @media screen and (min-width: 1200px) {
+                // @media screen and (min-width: 1200px) {
                     padding: 0;
                     height: 100%;
                     display: flex;
-                }
+                // }
                 li{
-                    @media screen and (min-width: 1200px) {
+                    // @media screen and (min-width: 1200px) {
                         height: inherit;
                         a{
                             height: calc(8vh - 20px);
@@ -45,6 +45,10 @@ header{
                             padding: 20px 20px;
                             align-items: center;
                             background:$azul;
+                            color: #90959A;
+                        &:hover{
+                            color: white;
+                        }
                         }
                         .active{
                             height: calc(8vh - 20px);
@@ -52,8 +56,10 @@ header{
                             align-items: center;
                             padding: 20px 20px;
                             background: #2A80B9;
+                            border-radius: 5px 5px 0 0;
+                            color: white;
                         }
-                    }
+                    // }
                 }
             }
         }
