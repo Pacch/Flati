@@ -1,43 +1,51 @@
 
 header{
-    // @media screen and (min-width: 1200px) {    
-        background: $azul;
-        height: 8vh;
-    // }
+    background: $azul;
+    height: 8vh;
+    @media screen and (min-width: 992px) {    
+        // background: $azul;
+        // height: 8vh;
+    }
     .container{
-        // @media screen and (min-width: 1200px) {
-            height: inherit;
-            display: flex;
+        padding: 0 20px;
+        display: flex;
+        height: inherit;
+        margin: 0 auto;
+        max-width: 500px;
+        @media screen and (min-width: 992px) {
             max-width: 1000px;
-            margin: 0 auto;
-        // }
+        }
         .logo{
-            // @media screen and (min-width: 1200px) {
-                align-self: center;
-                flex: 4;               
-            // }
-            h2{
-                // @media screen and (min-width: 1200px) {
-                    text-transform: lowercase;
-                    font-size: 45px;
-                    font-weight: 100;
-                    letter-spacing: -3px;
-                    color:$text-color;
-                // }
+            align-self: center;
+            flex: 4;  
+            @media screen and (min-width: 992px) {
+                             
+            }
+            h1{
+                text-transform: lowercase;
+                font-size: 45px;
+                font-weight: 100;
+                letter-spacing: -3px;
+                color:$text-color;
+                @media screen and (min-width: 992px) {
+                    
+                }
             }
         }
         nav{
-            // @media screen and (min-width: 1200px) {
+            display: none;
+            @media screen and (min-width: 992px) {
                 align-self: flex-end;
-            // }
+                display: initial;
+            }
             ul{
-                // @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 992px) {
                     padding: 0;
                     height: 100%;
                     display: flex;
-                // }
+                }
                 li{
-                    // @media screen and (min-width: 1200px) {
+                    @media screen and (min-width: 992px) {
                         height: inherit;
                         a{
                             height: calc(8vh - 20px);
@@ -59,7 +67,7 @@ header{
                             border-radius: 5px 5px 0 0;
                             color: white;
                         }
-                    // }
+                    }
                 }
             }
         }

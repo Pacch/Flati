@@ -1,22 +1,32 @@
 section{
     background:$plomo;
-    display: flex;
+    padding: 0 20px;
     .container-section{
-        max-width: 1000px;
+        max-width: 700px;
         margin: 0 auto;
+        @media screen and (min-width: 1100px) {
+            max-width: 1000px;
+        }   
         ul.arriba{
-            margin: 80px 0;
             display: flex;
-            justify-content: space-between;
             padding: 0;
-
+            justify-content: space-around;
+            flex-wrap: wrap;
+            @media screen and (min-width: 1100px) {
+                margin: 80px 0;
+                justify-content: space-between;
+            }   
             li{
                 text-align: center;
-                width: 237px;
-                // flex:1;
+                width: 280px;
                 background: #E3E1E2;
-                // margin: 0 10px 0 10px;
                 padding: 10px 10px 20px 10px;
+                margin: 80px 15px 40px 15px;
+                
+                @media screen and (min-width: 1100px) {
+                    margin: 0 5px;
+                    width: 237px;
+                }
                 i{
                     background: #EEECED;
                     color: #2782BA;
@@ -42,24 +52,52 @@ section{
                     font-weight: 100;
                 }
             }
+            li:first-child{
+                @media screen and (min-width: 1100px) {
+                    margin: 0 5px 0 0 ;
+                }
+            }
+            li:last-child{
+                @media screen and (min-width: 1100px) {
+                    margin: 0 0 0 5px ;
+                }
+            }
         }
-        .container-botones{
+        .container{
 
         }
         .container{
-            width: 100%;
-            margin-bottom: 100px;
+            max-width: 700px;
+            margin: 0 auto;
+            @media screen and (min-width: 1100px) {
+                max-width: 1000px;
+            }   
             ul.abajo{
                 display: flex;
                 padding: 0;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-bottom: 80px;
+                
+                @media screen and (min-width: 1100px) {
+                    justify-content: space-between;
+                    flex-wrap: initial;
+                }   
+                
                 li{
                     color: white;
-                    margin: 0 1.5px 0 1.5px;
-                    width: 226px;
+                    margin: 30px 15px;
+                    width: 310px;
                     text-align: center;
                     background: #34495E;
                     font-size: 20px;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    @media screen and (min-width: 1100px) {
+                        margin: 0 1.5px 0 1.5px;
+                        width: 226px;
+                        padding: 0;
+                    }
                 &::before{
                         content: "";
                         position: absolute;
@@ -68,7 +106,10 @@ section{
                         border-top: 6px solid #34495E;
                         border-right: 6px solid transparent;
                         border-left: 6px solid transparent;
-                        margin: 285px 0 0 112px;
+                        margin: 300px  0 0 150px;
+                        @media screen and (min-width: 1100px) {
+                            margin: 290px 0 0 112px;
+                        }
                 }
                     img{
                         width: inherit;
@@ -86,11 +127,14 @@ section{
                     }
                 }
                 li:first-child{
-                    width: 400px;
+                    width: 100%;
                     text-align: initial;
                     background: #F0F0F0;
                     color: black;
-                    margin: 0 30px 0 0;
+                    margin:30px 15px 40px 15px;
+                        @media screen and (min-width: 1100px) {
+                            margin: 0 30px 0 0;
+                        }
                 &::before{
                         content: "";
                         position: static;
@@ -138,7 +182,9 @@ section{
                     }
                 }
                 li:last-child{
-                    margin: 0 0 0 1.5px;
+                    @media screen and (min-width: 1100px) {
+                        margin: 0 0 0 1.5px;
+                    }
                 }
             }
         }
