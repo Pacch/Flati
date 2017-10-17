@@ -1,9 +1,9 @@
-Ordenador de serie
+Flati
 =====================
 
 Proyecto
 -------------------
-[Enlace al demo](https://renzotev.github.io/ordenamiento/app/index.html)
+[Enlace al demo](https://pacch.github.io/Flati/app/)
 
 Instalación(DESARROLLO)
 -----------------------
@@ -18,23 +18,14 @@ Resumen del proyecto
 --------------------
 El proyecto ha sido realizado desde 0 con:
 * Sass
-* TypeScript
 * Pug ~~Jade~~
 * Gulp
 
 Librerias externas:
 No se usaron librerias externas a excepción de:
+* JQuery
 * normalize.css
 * Librerias para compilar con gulp
-* Algoritmos de ordenamiento de toda la vida(Ordenamiento por mezcla) para evitar usar el sort de javascript
-
-Nota:
-No usé JQuery debido a que el proyecto es muy pequeño para una libreria tan grande ya que tambien tenemos librerías que solucionan este tipo de problemas como las siguientes:
-
-* [MixItUp](https://www.kunkalabs.com/mixitup/)
-* [Isotope](http://isotope.metafizzy.co/)
-
-Que dependiendo del proyecto es mas sencillo usar alguna de estas librerias
 
 Estructura de carpetas
 ----------------------
@@ -49,7 +40,7 @@ ordenador de serie/
 |  |  |- ... (Icomoon fonts)
 
 |  |- js/
-|  |  |- app.js (Javascript transpilado y concatenado)
+|  |  |- app.js (Jquery)
 
 |  |- scss/ (Archivos Sass)
 |  |  - base/
@@ -57,12 +48,6 @@ ordenador de serie/
 |  |  - layout/
 |  |  - vendor/
 |  |  |- style.scss (includes)
-
-|  |- ts/ (Archivos TypeScript)
-|  |  |- app.ts
-|  |  |- Form.ts
-|  |  |- Sort.ts
-|  |  |- Validate.ts
 
 |  |- views/ (Archivos Pug ~~Jade~~)
 |  |  - inc/ (Header, footer)
