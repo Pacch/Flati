@@ -1,6 +1,10 @@
 .portada{
     background: $celeste;
     position: relative;
+    height: 600px;
+    @media screen and (min-width: 576px) {
+        height: 68vh;
+    }
     a{
         position: absolute;
         i{
@@ -16,7 +20,7 @@
     .container{
             position: relative;
             z-index: 1;
-            height: 68vh;
+            height: inherit;
             max-width: 700px;
             margin: 0 auto;
             @media screen and (min-width: 1200px){
