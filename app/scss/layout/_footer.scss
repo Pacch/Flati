@@ -14,8 +14,8 @@ footer{
         }
     }
     a{
+        top: -20px;
         position: absolute;
-        align-self: center;
         right: 0;
         padding: 5px 10px 5px 10px;
         margin-right: 16px;
@@ -23,5 +23,11 @@ footer{
     &:hover{
         color:#6E7078;
         }
+        @media screen and (min-width: 576px) {
+            font-size: 1em;
+            top:initial;
+            align-self: center;
+        }
     }
+
 }

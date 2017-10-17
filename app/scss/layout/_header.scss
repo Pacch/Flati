@@ -1,25 +1,28 @@
 
 header{
     background: $azul;
-    height: 8vh;
+    
     @media screen and (min-width: 992px) {    
-        // background: $azul;
-        // height: 8vh;
+        height: 8vh;
     }
     .container{
-        padding: 0 20px;
+        
         display: flex;
+        flex-wrap: wrap;
         height: inherit;
-        margin: 0 auto;
-        max-width: 500px;
+        justify-content: space-around;
         @media screen and (min-width: 992px) {
             max-width: 1000px;
+            padding: 0 20px;
+            flex-wrap: initial;
+            margin: 0 auto;
+            justify-content: initial;
         }
         .logo{
             align-self: center;
-            flex: 4;  
+
             @media screen and (min-width: 992px) {
-                             
+                flex: 4;             
             }
             h1{
                 text-transform: lowercase;
@@ -31,43 +34,77 @@ header{
                     
                 }
             }
-        }
+        }            
         nav{
-            display: none;
+            width: 100%;
             @media screen and (min-width: 992px) {
                 align-self: flex-end;
-                display: initial;
+                width: initial;
             }
             ul{
+                display: none;
+                padding: 0 20px;
+                border-top: 1px solid #474E58;
                 @media screen and (min-width: 992px) {
                     padding: 0;
                     height: 100%;
-                    display: flex;
+                    display: flex !important;
+                    border-top: none;
                 }
                 li{
+                    padding: 20px 0;
+                    border-bottom: 1px solid #2C2C2C;
                     @media screen and (min-width: 992px) {
                         height: inherit;
-                        a{
-                            height: calc(8vh - 20px);
-                            display: flex;
-                            padding: 20px 20px;
-                            align-items: center;
-                            background:$azul;
-                            color: #90959A;
-                        &:hover{
-                            color: white;
-                        }
-                        }
-                        .active{
-                            height: calc(8vh - 20px);
-                            display: flex;
-                            align-items: center;
-                            padding: 20px 20px;
-                            background: #2A80B9;
-                            border-radius: 5px 5px 0 0;
-                            color: white;
-                        }
+                        padding: 0;
+                        border-bottom: none;
                     }
+                    a{
+                        padding: 0 10px;
+                        @media screen and (min-width: 992px) {
+                            height: calc(8vh - 20px);
+                        display: flex;
+                        padding: 20px 20px;
+                        align-items: center;
+                        background:$azul;
+                        color: #90959A;
+                        }
+                        // height: calc(8vh - 20px);
+                        // display: flex;
+                        // padding: 20px 20px;
+                        // align-items: center;
+                        // background:$azul;
+                        // color: #90959A;
+                    &:hover{
+                        color: white;
+                    }
+                    }
+                    .active{
+                        height: calc(8vh - 20px);
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 20px;
+                        background: #2A80B9;
+                        border-radius: 5px 5px 0 0;
+                        color: white;
+                    }
+                    
+                }
+            }
+        }
+        span{
+            display: initial;
+            align-self: center;
+            
+            @media screen and (min-width: 992px) {
+                display: none;
+            }
+            a{
+                background: $celeste;
+                padding: 10px 13px;
+                border-radius: 50px;
+                i{
+
                 }
             }
         }
