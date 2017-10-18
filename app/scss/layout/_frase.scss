@@ -3,10 +3,13 @@
     display: flex;
     justify-content: center;
     background: $crema;
-    height: 24vh;
+    height: 190px;
     text-align: center;
     position: relative;
     z-index: 1;
+    // }
+    // @media screen and (min-width: 576px) {
+    //     height: 24vh;
     // }
     .container{
         color: $text-frase;

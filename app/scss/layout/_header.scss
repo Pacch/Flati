@@ -3,7 +3,7 @@ header{
     background: $azul;
     
     @media screen and (min-width: 992px) {    
-        height: 8vh;
+        // height: 8vh;
     }
     .container{
         
@@ -20,7 +20,7 @@ header{
         }
         .logo{
             align-self: center;
-
+            padding: 10px 0;
             @media screen and (min-width: 992px) {
                 flex: 4;             
             }
@@ -62,7 +62,7 @@ header{
                     a{
                         padding: 0 10px;
                         @media screen and (min-width: 992px) {
-                            height: calc(8vh - 20px);
+                        // height: calc(8vh - 20px);
                         display: flex;
                         padding: 20px 20px;
                         align-items: center;
@@ -80,7 +80,7 @@ header{
                     }
                     }
                     .active{
-                        height: calc(8vh - 20px);
+                        // height: calc(8vh - 20px);
                         display: flex;
                         align-items: center;
                         padding: 20px 20px;
