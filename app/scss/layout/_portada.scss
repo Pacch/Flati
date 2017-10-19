@@ -68,6 +68,15 @@
                 right: 111px;
             }
         }
+        .flama{
+                display: none;
+            @media screen and (min-width: 1200px){
+                display: block;
+                position: absolute;
+                right: 233px;
+                top: 355px;
+            }
+        }
         .frases{     
             font-size: 50px;
             height: 60%;
